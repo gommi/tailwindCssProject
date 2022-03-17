@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" CONTENT="Author: S.K. Author, Illustrator: NENASAL d.o.o., Category: Slusalice, Price:  41.99KM, Length: x pages">
+    <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
+    <title>ihave shop</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="test">
+    <div id="nav" class="container">
+        <nav class="flex items-center justify-between flex-wrap p-6 lg:pr-0">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <a href="../src/index.html">
+                    <img src="img/logo1.png" alt="ihave logo">
+                </a>
+            </div>
+            <div class="block lg:hidden">
+              <button id="menu-button" class="flex items-center px-3 py-2 border rounded text-menu-color border-menu-color">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+              </button>
+            </div>
+            <div id="menu" class="w-full block flex-grow bg-dropdown-color lg:bg-transparent lg:flex lg:items-center lg:w-auto" style="z-index: 999;">
+              <div class="lg:flex-grow text-center">
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-menu-color hover:text-regal-orange font-bold mr-4">
+                    POČETNA
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-menu-color hover:text-regal-orange font-bold mr-4">
+                    PROIZVODI
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-menu-color hover:text-regal-orange font-bold mr-4">
+                    RASPORDAJA
+                </a> 
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-menu-color hover:text-regal-orange font-bold mr-4">
+                    AKCIJA
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-menu-color hover:text-regal-orange font-bold">
+                    KONTAKT
+                </a>
+              </div>
+              <div class="flex justify-center">
+                <input type="search" id="esearch" name="esearch" class="rounded" placeholder="Search product">
+                <a href="#" onclick="javascript:btnSearch()" class="inline-blockd px-4 py-2 leading-none mt-4 lg:mt-0">
+                    <img src="img/lupa.svg" alt="Search">
+                </a>
+                <a href="#" class="inline-block  px-4 py-2 leading-none mt-4 lg:mt-0">
+                    <img src="img/shopping-cart.svg" alt="Shopping cart">
+                </a>
+                <a href="#" class="inline-block  px-4 py-2 leading-none mt-4 lg:mt-0">
+                    <img src="img/hamburger.svg" alt="Hamburger">
+                </a>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div id="content" class="container mx-auto">
+        <div class="grid md:grid-cols-50/50 w-full">
+            <div class="grid md:grid-cols-30/70 w-full">
+                <div class="order-2 md:order-1">
+                    <div class="gallery-cont flex flex-row justify-center md:flex-col md:pl-6">
+                        <img class="gallery-img" src="img/Group 23.png" alt="...">
+                        <img class="gallery-img" src="img/Mask Group 4.png" alt="...">
+                        <img class="gallery-img" src="img/Mask Group 3.png" alt="...">
+                        <img class="gallery-img" src="img/Mask Group 2.png" alt="...">
+                    </div>
+                </div>
+            
+                <div class="order-1 md:order-2">
+                    <div class="big-image-cont flex justify-center ">
+                        <img class="big-image" src="img/Mask Group 6.png" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-90/10 w-full bg-white-200">
+                <div>
+                    <div class="txt-cont">
+                        <div class="star-cont">
+                            <i class="fa-solid fa-star" style="color: #FFC107;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFC107;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFC107;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFC107;"></i>
+                            <i class="fa-solid fa-star" style="color: #CCCCCC;"></i>
+                        </div>
+                        <div class="title-cont">
+                            <p class="title">A18 Wireless headset</p>
+                            <p class="sub-title">Large-size earmuffs that could cover the whole ears, paired with thick, soft earmuffscan make it comfortable to immerse in music for a long time.</p>
+                        </div>
+                        <div class="price-cont flex items-center">
+                            <p class="price">41,99 KM</p>
+                            <div class="kolicina flex justify-between items-center pl-3 pr-3">
+                                <p class="operator" onclick="javascript:btnClickMin()">-</p>
+                                <p id="timesClicked" class="broj">1</p>
+                                <p class="operator" onclick="javascript:btnClick()">+</p>
+                            </div>
+                        </div>
+                        <div class="butt-cont">
+                            <button class="kupi-btn text-white font-bold py-2 px-4 border rounded">
+                                Kupi
+                            </button>
+                            <button class="dodaj-btn bg-transparent font-bold py-2 px-4 border rounded">
+                                Dodaj u korpu
+                            </button>
+                        </div>
+                        <div class="info-for-user">
+                            <div class="flex flex-row">
+                                <img src="img/user.svg" alt="user">
+                                <p class="pl-2">Trenutno 18 osoba gleda ovaj proizvod</p>
+                            </div>
+                            <div class="flex flex-row">
+                                <img src="img/surface1.svg" alt="surface">
+                                <p class="pl-2">Proizvod je dostupan na lageru.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center">
+                    <div class="social-media-top-conts flex flex-row sm:flex-col">
+                        <a href="#">
+                            <img src="img/facebook.svg" alt="...." class="mt-2 mb-2 mr-2 sm:mt-2 sm:mr-0 sm:mb-2 md:mr-0">
+                        </a>
+                        <a href="#">
+                            <img src="img/insta.svg" alt="...." class="mt-2 mb-2 mr-2 sm:mt-2 sm:mr-0 sm:mb-2">
+                        </a>
+                        <a href="#">
+                            <img src="img/in.svg" alt="...." class="mt-2 mb-2 sm:mt-2 sm:mr-0 sm:mb-2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section-two" class="flex items-center bg-dunes bg-cover bg-center">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+          <div class="pl-6">
+              <div class="cont-title flex">
+                <p id="opis" class="opis-title" onclick="javascript:opisClick()">Opis</p>
+                <p id="specifikacija" class="ostalo-title" onclick="javascript:specifikacijaClick()">Specifikacije</p>
+                <p id="ostalo" class="ostalo-title" onclick="javascript:ostaloClick()">Ostalo</p>
+              </div>
+              <div class="cont flex flex-col justify-center">
+                <p id="txtOne" class="change-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p id="txtTwo" class="change-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p id="txtThree" class="change-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            </div>
+        </div>
+          <div class="flex justify-center text-6xl"></div>
+        </div>
+    </div>
+</div>
+
+<div id="section-three" class="flex items-center bg-twoImage bg-cover bg-center">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+          <div class="pl-6"></div>
+            <div class="">
+                <div class="cont-title flex">
+                    <p class="st-title text-center md:text-left">Iskoristiti momente uživanja, na pravi način</p>
+                </div>
+                <div class="cont flex flex-col justify-center">
+                    <p class="st-subtitle text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. 
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="st-butt-cont flex flex-row justify-center md:justify-start">
+                    <button class="text-white font-bold py-2 px-4 rounded st-kupi-btn">
+                        Kupi
+                    </button>
+                    <button class="st-dodaj-btn bg-transparent font-semibold py-2 px-4 border rounded">
+                        Dodaj u korpu
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div id="section-four">
+    <div class="container mx-auto flex flex-col justify-center items-center pt-5 pb-5">
+        <div class="sf-title-cont">
+            <p class="sf-title text-center">Povezani proizvodi</p>
+            <p class="sf-subtitle text-center">Large-size earmuffs that could cover the whole ears, paired with thick, soft earmuffscan make it comfortable to immerse in music for a long time.</p>
+        </div>
+        <div class="sf-card-cont">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="#">
+                    <div class="sf-card">
+                        <div class="sf-card-image">
+                            <img src="img/slusaliceJedan.png" alt="..." height="394" width="394">
+                        </div>
+                        <div class="sf-card-title">
+                            <p class="text-center">Casque Bluetooth DeFunc</p>
+                        </div>
+                        <div class="sf-card-price">
+                            <p class="text-center">39,99 KM</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sf-card">
+                        <div class="sf-card-image">
+                            <img src="img/slusaliceDva.png" alt="..." height="394" width="394">
+                        </div>
+                        <div class="sf-card-title">
+                            <p class="text-center">Inkax HP-07</p>
+                        </div>
+                        <div class="sf-card-price">
+                            <p class="text-center">50,99 KM</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sf-card">
+                        <div class="sf-card-image">
+                            <img src="img/slusaliceTri.png" alt="..." height="394" width="394">
+                        </div>
+                        <div class="sf-card-title">
+                            <p class="text-center">L'avvento (HP07N)</p>
+                        </div>
+                        <div class="sf-card-price">
+                            <p class="text-center">60,99 KM</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sf-card">
+                        <div class="sf-card-image">
+                            <img src="img/slusalicecetiri.png" alt="..." height="394" width="394">
+                        </div>
+                        <div class="sf-card-title">
+                            <p class="text-center">Bluetooth inkax HP-05</p>
+                        </div>
+                        <div class="sf-card-price">
+                            <p class="text-center">41,99 KM</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section-five">
+    <div class="container mx-auto pt-6 pb-6">
+        <div class="sfive-title-cont flex justify-center items-center">
+            <p class="sfive-title text-center">Gdje želite da Vam dostavimo proizvod?!</p>
+        </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+           <div class="order-image-cont">
+               <img src="img/slusaliceNarudzba.png" alt="">
+           </div>
+           <div class="mr-6">
+            <form class="flex flex-col" action="">
+                <label class="self-start" for="fname">Ime i prezime</label>
+                <input class="sfive-input rounded" type="text" id="fname" name="fname"><br>
+
+                <label for="fname">Ulica i broj</label>
+                <input class="sfive-input rounded" type="text" id="fname" name="fname"><br>
+
+                <label for="fname">Grad</label>
+                <input class="sfive-input rounded" type="text" id="fname" name="fname"><br>
+
+                <label for="fname">Email adresa</label>
+                <input class="sfive-input rounded" type="email" id="fname" name="fname"> <br>
+
+                <label for="fname">Broj telefona</label>
+                <input class="sfive-input rounded" type="text" id="fname" name="fname"><br>
+
+                <label for="fname">Vaša poruka / doatne informacije</label>
+                <textarea class="sfive-textarea rounded" id="w3review" name="w3review" rows="6"></textarea>
+
+                <input class="sfive-btn-form" type="submit" value="Kupi">
+
+                <div class="sfive-surfice-cont flex justify-center items-center">
+                    <img src="img/surface1.svg" alt="">
+                    <p class="pl-2">Vaša kupovina je sigurna.</p>
+                </div>
+              </form>
+           </div>
+       </div>
+    </div>
+</div>
+
+<div id="section-six" class="flex justify-center items-center pt-6 pb-6">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="footer-col lg:ml-6">
+                <p>KONTAKT I PODRŠKA</p>
+                <p>Adresa: Prote Nikole Kostića bb</p>
+                <p>Email: info@simel-bih.com</p>
+                <p>Skype: simel-bih</p>
+                <div class="headphones-cont flex justify-center md:justify-start">
+                    <img class="footer-img" src="img/headphones.png" alt="">
+                    <div class="cont pl-3">
+                        <p class="headphones-pozovite">Pozovite nas!</p>
+                        <p>+387 51 535 560</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p>O NAMA</p>
+                <p><a href="#">Dostava</a></p>
+                <p><a href="#">Garancija kvaliteta</a></p>
+                <p><a href="#">Način plaćanja</a></p>
+            </div>
+            <div class="footer-col">
+                <p>POMOĆ</p>
+                <p><a href="#">Kako se registrovati?</a></p>
+                <p><a href="#">Često postavljana pitanja</a></p>
+                <p><a href="#">Uslovi korištenja</a></p>
+            </div>
+            <div class="footer-col">
+                <p>SOCIJALNE MREŽE</p>
+                <div class="footer-social-media flex justify-center md:justify-start">
+                    <a href="#">
+                        <img class="pr-2" src="img/facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="pr-2" src="img/insta.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/in.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-logo flex justify-center md:justify-start">
+                    <a href="../src/index.html">
+                        <img class="pr-2" src="img/logo1.png" alt="" width="120" height="30">
+                    </a>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container mx-auto footer-custum flex items-center">
+        <p class="text-center md:text-left">Copyright © NENASAL d.o.o 2020 All Rights Reserved. Powered by NENASAL</p>
+    </div>
+</div>
+
+<script src="js/function.js"></script>
+</body>
+</html>
+<!--
+-->

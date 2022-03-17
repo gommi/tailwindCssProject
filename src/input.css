@@ -1,0 +1,786 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.test{
+    background: #EBEFF7;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.test::after{
+    content: '';
+    position: absolute;
+    width:36%;
+    left:0;
+    background: #DFE3EB;
+    height: 100%;
+}
+
+#nav{
+    z-index: 999; 
+    position: absolute; 
+    top: 0; 
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#esearch{
+    display: none;
+}
+
+#content{
+    z-index: 99;
+
+    margin-top: 100px;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brend{
+    width: 198px;
+    height: 50px;
+}
+
+.oblogaDva{
+    width: 100%; 
+
+    background-color: #81D2E3;
+}
+
+.oblogaTri{
+    width: 100%; 
+
+    background-color: #E9DFD5;
+}
+
+.oblogaCetiri{
+    width: 100%;
+
+    background-color: #EBEFF7;
+}
+
+.oblogaPet{
+    width: 100%;
+
+    background-color: #DFE3EB;
+}
+
+.oblogaSest{
+    width: 100%;
+
+    background-color: #EBEFF7;
+}
+
+.oblogaSedam{
+    width: 100%;
+
+    background-color: #DFE3EB; 
+}
+
+.gallery-img{
+    width: 118px;
+    height: 118px;
+    margin-bottom: 40px;
+}
+
+.big-image{
+    width: 540px;
+}
+
+.title{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.sub-title{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.price-cont{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.price{
+    font-size: 50px;
+    color: #FF9300;
+}
+
+.kolicina{
+    width: 133px;
+    height: 50px;
+    border: 1px solid #9C9C9C;
+    border-radius: 8px;
+
+    margin-left: 50px;
+}
+
+.operator{
+    cursor:pointer;
+    color: #9C9C9C;
+}
+
+.broj{
+    font-size: 24px;
+    color: #4B4B4B;
+}
+
+.butt-cont{
+    margin-bottom: 32px;
+}
+
+.kupi-btn{
+    width: 200px;
+    height: 48px;
+    background-color: #FF9300;
+}
+
+.dodaj-btn{
+    width: 200px;
+    height: 48px;
+    border: 2px solid #FF9300 !important;
+    color: #FF9300 !important;
+}
+
+#section-two{
+    background-color: #cccccc;
+    height: 100vh;
+}
+
+.opis-title{
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    width:32%; 
+    text-align: center; 
+    padding-bottom:20px; 
+    margin-bottom: 32px; 
+    border-bottom: 3px solid #FFC107;
+    cursor:pointer;
+}
+
+.ostalo-title{
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    width:33%; 
+    text-align: center; 
+    padding-bottom:20px; 
+    margin-bottom: 32px; 
+    border-bottom: 1px solid #656565;
+    cursor:pointer;
+}
+
+.change-txt{
+    margin-bottom:30px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #656565;
+}
+
+
+#section-three{
+    background-color: #cccccc;
+    height: 100vh;
+}
+
+.st-cont{
+    width: 560px;
+}
+
+.st-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 60px;
+}
+
+.st-subtitle{
+    font-size: 18px;
+    line-height: 17px;
+    color: #656565;
+
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.st-butt-cont{
+    width: auto;
+}
+
+.st-kupi-btn{
+    width: 200px;
+    height: 48px;
+    background-color: #FF9300;
+}
+
+.st-dodaj-btn{
+    width: 200px;
+    height: 48px;
+    border: 2px solid #FF9300;
+    color: #FF9300;
+
+    margin-left: 25px;
+}
+
+#section-four{
+    background-color: #EBEFF7;
+    height: 110vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sf-title{
+    font-size: 50px;
+    line-height: 74px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.sf-subtitle{
+    width: 596px;
+    line-height: 27px;
+    font-size: 18px;
+
+    color: #656565;
+
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.sf-card-title{
+    height: 100px;
+
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 53px;
+    color: #000000;
+}
+
+.sf-card-price{
+    height: 100px;
+
+    font-size: 50px;
+    line-height: 74px;
+    color: #FF9300;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#section-five{
+    background-color: #DFE3EB;
+    height: 130vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sfive-title-cont{
+    width: 100%;
+
+    margin-bottom: 96px;
+}
+
+.sfive-title{
+    width: 600px;
+    font-size: 50px;
+    line-height: 74px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.sfive-input{
+    background-color: #DFE3EB;
+    border: 1px solid #939FB8;
+}
+
+.sfive-textarea{
+    background-color: #DFE3EB;
+    border: 1px solid #939FB8;
+}
+
+.sfive-btn-form{
+    width: 100%;
+    height: 60px;
+
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2px;
+
+    border-radius: 8px;
+
+    background-color: #FF9300 !important;
+    color: #fff;
+
+    margin-top: 40px;
+}
+
+.sfive-surfice-cont{
+
+    padding-top: 16px;
+}
+
+#section-six{
+    height: 50vh;
+    background-color: #EBEFF7;
+}
+
+.footer-col p{
+    margin-bottom: 16px;
+}
+
+.headphones-pozovite{
+    margin-bottom: 0px !important;
+}
+
+.headphones-cont{
+    margin-top: 32px;
+}
+
+.footer-img{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.footer{
+    background-color: #DFE3EB;
+}
+
+.footer-custum{
+    height: 102px;
+}
+
+.footer-custum p{
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+}
+
+.footer-logo{
+    margin-top: 44px;
+}
+
+@media(max-width: 640px){
+
+    .test::after{
+        display: none;
+    }
+
+    #content{
+        top: 100px;
+    }
+
+
+    .big-image{
+        width: 120px;
+    }
+
+    .gallery-img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0;
+    }
+
+    .title{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .sub-title{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .price-cont{
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .price{
+        font-size: 32px;
+    }
+
+    .kolicina{
+        width: 100px;
+        height: 32px;
+    }
+
+    .butt-cont{
+        margin-bottom: 15px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .kupi-btn{
+        width: 100px;
+        height: 42px;
+    }
+
+    .dodaj-btn{
+        width: 150px;
+        height: 42px;
+    }
+
+    .info-for-user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #section-three{
+        height: 100vh;
+    }
+
+    .st-title{
+        font-size: 42px;
+    }
+
+    #section-four{
+        height: auto;
+    }
+
+    .sf-title{
+        font-size: 42px;
+        line-height: 46px;
+    }
+    
+    .sf-subtitle{
+        width: 400px;
+    }
+
+    .sf-card-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sf-card-image img{
+        width: 150px;
+    }
+
+    .sf-card-title{
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .sf-card-price{
+        height: 50px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    #section-five{
+        height: auto;
+    }
+
+    .sfive-title-cont{
+        margin-bottom: 35px;
+    }
+
+    .sfive-title{
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .order-image-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order-image-cont img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #section-six{
+        height: auto;
+        text-align: center;
+    }
+}
+
+@media(min-width: 640px) and (max-width:768px){
+    
+    #content{
+        top: 100px;
+    }
+
+    .test::after{
+        display: none;
+    }
+
+    .gallery-img{
+        width: 60px !important;
+        height: 60px !important;
+        margin-bottom: 20px;
+    }
+
+    .big-image{
+        width: 120px;
+    }
+
+    .title{
+        font-size: 32px;
+    }
+
+    .sub-title{
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .price-cont{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .price{
+        font-size: 32px;
+    }
+
+    .kolicina{
+        width: 90px;
+        height: 32px;
+    }
+
+    .butt-cont{
+        margin-bottom: 15px;
+    }
+
+    .kupi-btn{
+        width: 100px;
+        height: 38px;
+    }
+
+    .dodaj-btn{
+        width: 150px;
+        height: 38px;
+    }
+
+    #section-four{
+        height: auto;
+    }
+
+    .sf-card-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sf-card-image img{
+        width: 150px;
+    }
+
+    .sf-card-title{
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .sf-card-price{
+        height: 50px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    #section-five{
+        height: auto;
+    }
+
+    .sfive-title-cont{
+        margin-bottom: 35px;
+    }
+
+    .order-image-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order-image-cont img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #section-six{
+        height: auto;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px ) {
+
+    .test::after{
+        display: none;
+    }
+
+    #content{
+        top: 130px;
+    }
+
+    .gallery-img{
+        width: 60px !important;
+        height: 60px !important;
+        margin-bottom: 20px;
+    }
+
+    .big-image{
+        width: 300px;
+    }
+
+    .title{
+        font-size: 32px;
+    }
+
+    .sub-title{
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .price-cont{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .price{
+        font-size: 32px;
+    }
+
+    .kolicina{
+        width: 90px;
+        height: 32px;
+    }
+
+    .butt-cont{
+        margin-bottom: 15px;
+    }
+
+    .kupi-btn{
+        width: 100px;
+        height: 38px;
+    }
+
+    .dodaj-btn{
+        width: 150px;
+        height: 38px;
+    }
+
+    #section-four{
+        height: auto;
+    }
+
+    .sf-card-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sf-card-image img{
+        width: 250px;
+    }
+
+    .sf-card-title{
+        height: 50px;
+        font-size: 32px;
+    }
+
+    .sf-card-price{
+        height: 50px;
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    #section-five{
+        height: auto;
+    }
+
+    .sfive-title-cont{
+        margin-bottom: 35px;
+    }
+
+    .order-image-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order-image-cont img{
+        width: 400px;
+        height: 400px;
+    }
+
+    #section-six{
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1550px ) {
+
+    #content{
+        top: 100px;
+    }
+
+    .gallery-img{
+        margin-bottom: 25px;
+    }
+
+    .sf-card-title{
+        height: 40px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    #section-five{
+        height: auto;
+    }
+
+    .sfive-title-cont{
+        margin-bottom: 35px;
+    }
+
+    .order-image-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order-image-cont img{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1920px ) {
+
+    
+}
+
+/*
+@media (min-width: 1920px) and (max-width: 1536px ) {
+   .container-custom{
+        width: 1500px;
+    }
+}*/
+
